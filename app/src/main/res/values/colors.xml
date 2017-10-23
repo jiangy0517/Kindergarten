@@ -3,4 +3,13 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!--默认背景色，均提取自设计稿-->
+    <color name="defaultBackground">#fdfdfe</color>
+    <!--默认文字颜色-->
+    <color name="defaultTextColor">#0e0e0e</color>
+
+    <!--主界面底部导航栏颜色-->
+    <color name="tabTextNormal">#757575</color>
+    <color name="tabTextChecked">#1ab2ef</color>
 </resources>

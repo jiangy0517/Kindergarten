@@ -1,18 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    style="@style/VerticalDoubleMatch"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:context="com.huida.kindergarten.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!Hello HD"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <include
+        android:id="@+id/id_main_toolbar"
+        layout="@layout/toolbar"/>
 
-</android.support.constraint.ConstraintLayout>
+    <com.huida.kindergarten.view.NoScrollViewPager
+        android:id="@+id/id_main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </com.huida.kindergarten.view.NoScrollViewPager>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d4d4d4"/>
+
+    <RadioGroup
+        android:id="@+id/id_main_rg_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/defaultBackground"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/id_main_rb_class"
+            style="@style/MainTabStyle"
+            android:drawableTop="@drawable/tab_class"
+            android:text="班级"/>
+
+        <RadioButton
+            android:id="@+id/id_main_rb_school"
+            style="@style/MainTabStyle"
+            android:drawableTop="@drawable/tab_school"
+            android:text="学校"/>
+
+        <ImageView
+            android:id="@+id/id_main_iv_plus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.2"
+            android:button="@null"
+            android:src="@drawable/tab_plus"/>
+
+        <RadioButton
+            android:id="@+id/id_main_rb_comm"
+            style="@style/MainTabStyle"
+            android:drawableTop="@drawable/tab_comm"
+            android:text="沟通"/>
+
+        <RadioButton
+            android:id="@+id/id_main_rb_mine"
+            style="@style/MainTabStyle"
+            android:drawableTop="@drawable/tab_mine"
+            android:text="我的"/>
+
+    </RadioGroup>
+
+</LinearLayout>
