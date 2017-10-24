@@ -13,7 +13,7 @@
 
         <ImageView
             android:id="@+id/id_school_iv_banner"
-            android:layout_width="match_parent"
+            android:layout_width="@dimen/x720"
             android:layout_height="180dp"
             android:scaleType="fitXY"
             android:src="@drawable/school_head_img"/>
