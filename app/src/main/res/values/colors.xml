@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#fdfdfe</color>
+    <color name="colorPrimaryDark">#f8f6f6</color>
     <color name="colorAccent">#FF4081</color>
 
     <!--默认背景色，均提取自设计稿-->
@@ -12,4 +12,8 @@
     <!--主界面底部导航栏颜色-->
     <color name="tabTextNormal">#757575</color>
     <color name="tabTextChecked">#1ab2ef</color>
+
+    <!--分割线颜色-->
+    <color name="defaultCutLine">#d4d4d4</color>
+
 </resources>

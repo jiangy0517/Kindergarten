@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="school_guide">
+        <item>宝宝儿歌</item>
+        <item>宝宝作品</item>
+        <item>投票评选</item>
+        <item>成长学堂</item>
+        <item>教师风采</item>
+    </string-array>
+</resources>

@@ -20,12 +20,12 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#d4d4d4"/>
+        android:background="@color/defaultCutLine"/>
 
     <RadioGroup
         android:id="@+id/id_main_rg_tabs"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="56dp"
         android:background="@color/defaultBackground"
         android:gravity="center"
         android:orientation="horizontal">
@@ -34,18 +34,18 @@
             android:id="@+id/id_main_rb_class"
             style="@style/MainTabStyle"
             android:drawableTop="@drawable/tab_class"
-            android:text="班级"/>
+            android:text="@string/tab_class"/>
 
         <RadioButton
             android:id="@+id/id_main_rb_school"
             style="@style/MainTabStyle"
             android:drawableTop="@drawable/tab_school"
-            android:text="学校"/>
+            android:text="@string/tab_school"/>
 
         <ImageView
             android:id="@+id/id_main_iv_plus"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
             android:layout_weight="0.2"
             android:button="@null"
             android:src="@drawable/tab_plus"/>
@@ -54,13 +54,13 @@
             android:id="@+id/id_main_rb_comm"
             style="@style/MainTabStyle"
             android:drawableTop="@drawable/tab_comm"
-            android:text="沟通"/>
+            android:text="@string/tab_comm"/>
 
         <RadioButton
             android:id="@+id/id_main_rb_mine"
             style="@style/MainTabStyle"
             android:drawableTop="@drawable/tab_mine"
-            android:text="我的"/>
+            android:text="@string/tab_mine"/>
 
     </RadioGroup>
 
