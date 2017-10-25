@@ -30,6 +30,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.zhy:percent-support-extends:1.1.1'
     compile 'com.android.support:recyclerview-v7:26.+'
-    compile 'com.zhy:percent-support-extends:1.0.1'
     compile 'com.jakewharton:butterknife:8.8.1'
+    compile 'com.w4lle.library:NineLayout:1.0.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
 }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    >
+
+    <com.huida.kindergarten.view.CircleImageView
+        android:id="@+id/iv_ranking_head"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/temp_head"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        app:civ_border_overlay="false"
+        app:civ_border_width="0dp"
+        app:civ_fill_color="#fff"
+        />
+
+    <ImageView
+        android:id="@+id/iv_ranking_number"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@mipmap/ranking_no1"
+     />
+
+</RelativeLayout>

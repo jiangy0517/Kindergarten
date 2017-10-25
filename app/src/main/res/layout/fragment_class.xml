@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.huida.kindergarten.view.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     android:background="@color/defaultBackground">
     <LinearLayout
         android:orientation="vertical"
@@ -39,7 +40,7 @@
                 android:id="@+id/iv_head"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:src="@mipmap/ic_launcher_round"/>
+                android:src="@mipmap/temp_head"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -84,7 +85,7 @@
 
         </RelativeLayout>
         <include layout="@layout/line"/>
-
+    <!--八个模块-->
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_moudle"
             android:layout_width="match_parent"
@@ -97,16 +98,20 @@
             android:src="@mipmap/home_cd"
             android:scaleType="centerCrop"
             />
-
+        <!--宝宝排名-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/rv_ranking"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:paddingLeft="10dp"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -114,11 +119,14 @@
         </LinearLayout>
 
         <include layout="@layout/line"/>
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_shuoshuo"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_shuoshuo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
 
     </LinearLayout>
-</ScrollView>
+</com.huida.kindergarten.view.MyScrollView>

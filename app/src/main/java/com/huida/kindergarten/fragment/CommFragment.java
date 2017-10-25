@@ -13,7 +13,7 @@ public class CommFragment extends BaseFragment {
 
     @Override
     protected int getContentView() {
-        return R.layout.fragment_class;
+        return R.layout.fragment_comm;
     }
 
     @Override

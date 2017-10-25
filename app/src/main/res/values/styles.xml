@@ -41,7 +41,7 @@
 
     <style name="Title_style">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_height">?android:attr/actionBarSize</item>
     </style>
 
     <style name="Title_text_style">

@@ -28,7 +28,7 @@ public class MainActivity extends BaseActivity {
 
     private NoScrollViewPager mViewPager;
     private RadioGroup mRgTabs;
-    private Toolbar mToolbar;
+    public Toolbar mToolbar;
 
     @Override
     protected int getContentView() {
@@ -82,10 +82,11 @@ public class MainActivity extends BaseActivity {
         /*默认选中第一个选项卡*/
         mRgTabs.check(R.id.id_main_rb_class);
 
-        mToolbar = (Toolbar) findViewById(R.id.id_main_toolbar);
-        final TextView title = mToolbar.findViewById(R.id.id_toolbar_title);
-        title.setText("交运里幼儿园");
-        setSupportActionBar(mToolbar);
+//        mToolbar = (Toolbar) findViewById(R.id.id_main_toolbar);
+//        final TextView title = mToolbar.findViewById(R.id.id_toolbar_title);
+//        title.setText("交运里幼儿园");
+//        setSupportActionBar(mToolbar);
+
     }
 
     @Override

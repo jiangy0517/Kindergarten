@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.huida.kindergarten.MainActivity">
 
-    <include
+  <!--  <include
         android:id="@+id/id_main_toolbar"
-        layout="@layout/toolbar"/>
+        layout="@layout/toolbar"/>-->
 
     <com.huida.kindergarten.view.NoScrollViewPager
         android:id="@+id/id_main_vp"
