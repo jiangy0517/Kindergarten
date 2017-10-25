@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#fdfdfe</color>
-    <color name="colorPrimaryDark">#f8f6f6</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
     <!--默认背景色，均提取自设计稿-->
@@ -16,4 +16,9 @@
     <!--分割线颜色-->
     <color name="defaultCutLine">#d4d4d4</color>
 
+
+    <!--分割线的颜色-->
+    <color name="line">#e6e6e6</color>
+    <color name="blue">#1ab3f0</color>
+    <color name="white">#ffffff</color>
 </resources>

@@ -39,4 +39,17 @@
         <item name="android:textColor">@color/defaultTextColor</item>
     </style>
 
+    <style name="Title_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="Title_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/defaultTextColor</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
 </resources>

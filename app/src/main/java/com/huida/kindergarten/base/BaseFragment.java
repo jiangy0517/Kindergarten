@@ -3,9 +3,12 @@ package com.huida.kindergarten.base;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import butterknife.ButterKnife;
 
 /**
  * Created by Scout
@@ -15,6 +18,14 @@ import android.view.ViewGroup;
 abstract public class BaseFragment extends Fragment {
 
     private static final String TAG = "BaseFragment";
+
+    /**上下文*/
+    protected FragmentActivity mActivity;
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mActivity = getActivity();
+    }
 
     @Nullable
     @Override
