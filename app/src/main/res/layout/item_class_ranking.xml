@@ -7,7 +7,7 @@
     android:layout_gravity="center"
     >
 
-    <com.huida.kindergarten.view.CircleImageView
+    <com.huida.kindergarten.view.imageview.CircleImageView
         android:id="@+id/iv_ranking_head"
         android:layout_width="45dp"
         android:layout_height="45dp"

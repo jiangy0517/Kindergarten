@@ -1,4 +1,4 @@
-package com.huida.kindergarten.view;
+package com.huida.kindergarten.view.imageview;
 
 import android.content.Context;
 import android.content.res.TypedArray;

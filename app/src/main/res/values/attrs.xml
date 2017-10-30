@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!--校园页面收听量的ImageView-->
     <declare-styleable name="MarkImageView">
         <attr name="num"
               format="integer"/>
@@ -10,10 +11,28 @@
 
     </declare-styleable>
 
+    <!--带角标的ImageView-->
+    <declare-styleable name="BadgeImageView">
+        <attr name="badgeNumber"
+              format="integer"/>
+
+        <attr name="badgeSrc"
+              format="reference"/>
+
+        <attr name="isCircle"
+              format="boolean"/>
+
+    </declare-styleable>
+
+    <!--圆形ImageView-->
     <declare-styleable name="CircleImageView">
-        <attr name="civ_border_width" format="dimension" />
-        <attr name="civ_border_color" format="color" />
-        <attr name="civ_border_overlay" format="boolean" />
-        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_border_width"
+              format="dimension"/>
+        <attr name="civ_border_color"
+              format="color"/>
+        <attr name="civ_border_overlay"
+              format="boolean"/>
+        <attr name="civ_fill_color"
+              format="color"/>
     </declare-styleable>
 </resources>

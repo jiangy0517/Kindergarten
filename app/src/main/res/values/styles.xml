@@ -2,13 +2,11 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme"
-           parent="Theme.AppCompat.Light.DarkActionBar">
+           parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:windowNoTitle">true</item>
     </style>
 
     <!--主界面底部导航栏样式-->
@@ -36,7 +34,7 @@
     </style>
 
     <style name="DefaultText">
-        <item name="android:textColor">@color/defaultTextColor</item>
+        <item name="android:textColor">@color/defaultPrimaryTextColor</item>
     </style>
 
     <style name="Title_style">
@@ -47,9 +45,41 @@
     <style name="Title_text_style">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">18sp</item>
-        <item name="android:textColor">@color/defaultTextColor</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/defaultPrimaryTextColor</item>
         <item name="android:layout_centerInParent">true</item>
     </style>
+
+    <!--沟通页面列表父布局-->
+    <style name="CommListItemGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="CommListItemText"
+           parent="@style/DefaultText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CommListItemSubText"
+           parent="@style/CommListItemText">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/defaultSecondTextColor</item>
+    </style>
+
 
 </resources>

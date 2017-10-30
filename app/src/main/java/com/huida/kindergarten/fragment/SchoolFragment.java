@@ -1,8 +1,11 @@
 package com.huida.kindergarten.fragment;
 
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
 
 import com.huida.kindergarten.R;
 import com.huida.kindergarten.adapter.GuideLinearAdapter;
@@ -24,7 +27,7 @@ import java.util.List;
 public class SchoolFragment extends BaseFragment {
 
     private static final String TAG = "SchoolFragment";
-
+    public Toolbar mToolbar;
     @Override
     protected int getContentView() {
         return R.layout.fragment_school;
@@ -63,7 +66,13 @@ public class SchoolFragment extends BaseFragment {
         RecyclerView rvGuide = view.findViewById(R.id.id_school_rv_guide);
         rvGuide.setLayoutManager(new GridLayoutManager(getContext(), 5,
                 GridLayoutManager.VERTICAL, false));
+        rvGuide.setNestedScrollingEnabled(false);
         rvGuide.setAdapter(guideAdapter);
+
+        mToolbar = (Toolbar) view.findViewById(R.id.id_main_toolbar);
+        final TextView title = mToolbar.findViewById(R.id.id_toolbar_title);
+        title.setText("交运里幼儿园");
+        ((AppCompatActivity)getActivity()).setSupportActionBar(mToolbar);
     }
 
     @Override

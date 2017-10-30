@@ -22,6 +22,6 @@
         android:lines="1"
         android:maxLength="5"
         android:text="宝宝儿歌"
-        android:textColor="@color/defaultTextColor"/>
+        android:textColor="@color/defaultPrimaryTextColor"/>
 
 </LinearLayout>

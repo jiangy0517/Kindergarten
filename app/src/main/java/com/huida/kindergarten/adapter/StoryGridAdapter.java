@@ -5,7 +5,7 @@ import android.content.Context;
 import com.huida.kindergarten.R;
 import com.huida.kindergarten.adapter.base.BaseRecycleViewAdapter;
 import com.huida.kindergarten.bean.StoryItem;
-import com.huida.kindergarten.view.MarkImageView;
+import com.huida.kindergarten.view.imageview.MarkImageView;
 
 import java.util.List;
 

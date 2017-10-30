@@ -5,20 +5,22 @@
     <color name="colorAccent">#FF4081</color>
 
     <!--默认背景色，均提取自设计稿-->
-    <color name="defaultBackground">#fdfdfe</color>
+    <color name="defaultBackground">#ffffff</color>
     <!--默认文字颜色-->
-    <color name="defaultTextColor">#0e0e0e</color>
+    <color name="defaultPrimaryTextColor">#0e0e0e</color>
+    <color name="defaultSecondTextColor">#2c2c2c</color>
 
     <!--主界面底部导航栏颜色-->
     <color name="tabTextNormal">#757575</color>
     <color name="tabTextChecked">#1ab2ef</color>
 
     <!--分割线颜色-->
-    <color name="defaultCutLine">#d4d4d4</color>
+    <color name="defaultCutLine">#d1d1d1</color>
 
 
     <!--分割线的颜色-->
     <color name="line">#e6e6e6</color>
     <color name="blue">#1ab3f0</color>
     <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
 </resources>

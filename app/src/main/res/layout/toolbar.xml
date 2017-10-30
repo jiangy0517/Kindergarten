@@ -6,14 +6,15 @@
     android:layout_height="?android:attr/actionBarSize"
     android:background="@color/defaultBackground"
     android:orientation="vertical"
-    app:titleTextColor="@color/defaultTextColor">
+    app:contentInsetStart="0dp"
+    app:titleTextColor="@color/defaultPrimaryTextColor">
 
     <TextView
         android:id="@+id/id_toolbar_title"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:textColor="@color/defaultTextColor"
-        android:textSize="20dp"/>
+        android:textColor="@color/defaultPrimaryTextColor"
+        android:textSize="20sp"/>
 
 </android.support.v7.widget.Toolbar>

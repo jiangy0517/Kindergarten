@@ -3,10 +3,8 @@ package com.huida.kindergarten;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.Toolbar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 
 import com.huida.kindergarten.adapter.MainViewPagerAdapter;
 import com.huida.kindergarten.base.BaseActivity;
@@ -28,7 +26,6 @@ public class MainActivity extends BaseActivity {
 
     private NoScrollViewPager mViewPager;
     private RadioGroup mRgTabs;
-    public Toolbar mToolbar;
 
     @Override
     protected int getContentView() {
@@ -81,12 +78,6 @@ public class MainActivity extends BaseActivity {
 
         /*默认选中第一个选项卡*/
         mRgTabs.check(R.id.id_main_rb_class);
-
-//        mToolbar = (Toolbar) findViewById(R.id.id_main_toolbar);
-//        final TextView title = mToolbar.findViewById(R.id.id_toolbar_title);
-//        title.setText("交运里幼儿园");
-//        setSupportActionBar(mToolbar);
-
     }
 
     @Override

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="45dp"
+             android:layout_height="45dp"
+             android:orientation="vertical">
+
+    <com.huida.kindergarten.view.imageview.CircleImageView
+        android:id="@+id/id_iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_comm_class"/>
+
+    <TextView
+        android:id="@+id/id_tv_badge"
+        android:layout_width="9dp"
+        android:textColor="@color/white"
+        android:textSize="6dp"
+        android:text="12"
+        android:gravity="center"
+        android:layout_height="9dp"
+        android:layout_gravity="right|top"
+        android:background="@drawable/dot_red"/>
+
+</FrameLayout>

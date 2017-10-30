@@ -1,7 +1,5 @@
 package com.huida.kindergarten.fragment;
 
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,7 +12,7 @@ import android.widget.TextView;
 import com.huida.kindergarten.R;
 import com.huida.kindergarten.adapter.NineLayoutAdapter;
 import com.huida.kindergarten.base.BaseFragment;
-import com.huida.kindergarten.view.CircleImageView;
+import com.huida.kindergarten.view.imageview.CircleImageView;
 import com.huida.kindergarten.view.FullyGridLayoutManager;
 import com.huida.kindergarten.view.FullyLinearLayoutManager;
 import com.huida.kindergarten.view.XCRoundRectImageView;

@@ -1,132 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.huida.kindergarten.view.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:background="@color/defaultBackground">
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <!--标题栏-->
-        <RelativeLayout
-            style="@style/Title_style"
-            android:paddingRight="15dp">
-            <TextView
-                style="@style/Title_text_style"
-                android:text="班级"
-                />
-            <ImageButton
-                android:id="@+id/ib_class_msg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@mipmap/class_msg"
-                android:layout_centerVertical="true"
-                android:layout_alignParentRight="true"
-                android:paddingRight="10dp"/>
-        </RelativeLayout>
+    android:orientation="vertical">
+    <!--标题栏-->
+    <RelativeLayout
+        style="@style/Title_style"
+        android:paddingRight="15dp">
 
-        <include layout="@layout/line"/>
-        <!--个人信息-->
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="12dp"
-            android:paddingBottom="12dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp">
-
-            <com.huida.kindergarten.view.XCRoundRectImageView
-                android:id="@+id/iv_head"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:src="@mipmap/temp_head"/>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_toRightOf="@id/iv_head"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp">
-                <TextView
-                    android:id="@+id/tv_baby_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="张冉冉"
-                    android:textSize="@dimen/subTitle_text_size"
-                    />
-                <TextView
-                    android:id="@+id/tv_baby_class"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="中三班"
-                    android:layout_toRightOf="@id/iv_head"
-                    android:layout_marginTop="8dp"
-                    android:textSize="@dimen/item_text_size"
-                    android:textColor="@color/blue"/>
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/shape_rounded_rectangle_blue"
-                android:text="签到"
-                android:textColor="@color/white"
-                android:paddingLeft="10dp"
-                android:paddingRight="20dp"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:drawableLeft="@mipmap/qiandao"
-                android:drawablePadding="5dp"
-                />
-
-        </RelativeLayout>
-        <include layout="@layout/line"/>
-    <!--八个模块-->
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_moudle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"/>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/home_cd"
-            android:scaleType="centerCrop"
+        <TextView
+            style="@style/Title_text_style"
+            android:text="班级"
             />
-        <!--宝宝排名-->
+
+        <ImageButton
+            android:id="@+id/ib_class_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/class_msg"
+            android:paddingRight="10dp"/>
+    </RelativeLayout>
+
+    <include layout="@layout/line"/>
+
+    <com.huida.kindergarten.view.MyScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/defaultBackground"
+        android:fillViewport="true">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--个人信息-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="12dp">
+
+                <com.huida.kindergarten.view.XCRoundRectImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@mipmap/temp_head"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/iv_head"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_baby_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="张冉冉"
+                        android:textSize="@dimen/subTitle_text_size"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_baby_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="中三班"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/item_text_size"/>
+
+                </LinearLayout>
+
+                <!--星星数量-->
+                <TextView
+                    android:id="@+id/tv_class_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_alignBottom="@id/layout_class"
+                    android:layout_toRightOf="@+id/layout_class"
+                    android:drawableRight="@mipmap/ic_class_star"
+                    android:gravity="bottom"
+                    android:text="30 "
+                    android:textColor="#fca413"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_rounded_rectangle_blue"
+                    android:drawableLeft="@mipmap/qiandao"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="签到"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/line"/>
+            <!--八个模块-->
             <android.support.v7.widget.RecyclerView
-                android:id="@+id/rv_ranking"
-                android:layout_width="0dp"
+                android:id="@+id/rv_moudle"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:paddingLeft="10dp"/>
+                android:padding="10dp"/>
+
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/home_love_myclass"/>
+                android:scaleType="centerCrop"
+                android:src="@mipmap/home_cd"
+                />
+            <!--宝宝排名-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_ranking"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_love_myclass"/>
+            </LinearLayout>
+
+            <include layout="@layout/line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_shuoshuo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
         </LinearLayout>
 
-        <include layout="@layout/line"/>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/rv_shuoshuo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-        </RelativeLayout>
+    </com.huida.kindergarten.view.MyScrollView>
 
-    </LinearLayout>
-</com.huida.kindergarten.view.MyScrollView>
+</LinearLayout>
+

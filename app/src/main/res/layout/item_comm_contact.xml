@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/CommListItemGroup"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.huida.kindergarten.view.imageview.BadgeImageView
+        android:id="@+id/id_contact_iv_head"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:badgeSrc="@mipmap/ic_comm_service"
+        app:isCircle="true"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|left"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_contact_tv_title"
+            style="@style/CommListItemText"
+            android:text="APP客服咨询"/>
+
+        <TextView
+            android:id="@+id/id_contact_tv_subtitle"
+            style="@style/CommListItemSubText"
+            android:paddingLeft="2dp"
+            android:text="APP客服咨询"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/id_contact_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.05"
+        android:scaleType="fitXY"
+        android:text="2017-09-02"/>
+
+</LinearLayout>
+

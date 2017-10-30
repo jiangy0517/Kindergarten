@@ -14,7 +14,7 @@
         android:layout_marginTop="15dp"
         android:orientation="horizontal">
 
-        <com.huida.kindergarten.view.CircleImageView
+        <com.huida.kindergarten.view.imageview.CircleImageView
             android:id="@+id/iv_shuoshuo_icon"
             android:layout_width="40dp"
             android:layout_height="40dp"

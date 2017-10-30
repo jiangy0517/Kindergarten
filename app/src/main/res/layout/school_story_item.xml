@@ -9,7 +9,7 @@
               android:gravity="center"
               android:orientation="vertical">
 
-    <com.huida.kindergarten.view.MarkImageView
+    <com.huida.kindergarten.view.imageview.MarkImageView
         android:id="@+id/id_story_iv_img"
         android:layout_width="100dp"
         android:layout_height="100dp"
